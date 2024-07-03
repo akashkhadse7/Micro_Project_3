@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <p id="cal">calc</p>
+        <div class="inpt">
+            <input type="text" id="result">
+        </div>
+        <div class="digits">
+            <table class="tbl">
+                <tr>
+                    <td><input type="button" value="7" onclick="res('7')"></td>
+                    <td><input type="button" value="8" onclick="res('8')"></td>
+                    <td><input type="button" value="9" onclick="res('9')"></td>
+                    <td><input type="button" value="DEL" onclick="del()" class="del"></td>
+                </tr>
+        
+                <tr>
+                    <td><input type="button" value="4" onclick="res('4')"></td>
+                    <td><input type="button" value="5" onclick="res('5')"></td>
+                    <td><input type="button" value="6" onclick="res('6')"></td>
+                    <td><input type="button" value="+" onclick="res('+')"></td>
+                </tr>
+        
+                
+                <tr>
+                    <td><input type="button" value="1" onclick="res('1')"></td>
+                    <td><input type="button" value="2" onclick="res('2')"></td>
+                    <td><input type="button" value="3" onclick="res('3')"></td>
+                    <td><input type="button" value="-" onclick="res('-')"></td>
+                </tr>
+        
+                <tr>
+                    <td><input type="button" value="." onclick="res('.')" style="padding-bottom: 11px;"></td>
+                    <td><input type="button" value="0" onclick="res('0')"></td>
+                    <td><input type="button" value="/" onclick="res('/')"></td>
+                    <td><input type="button" value="*" onclick="res('*')" style="padding-top: 10px;"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="st"><input type="button" value="RESET" onclick="clr()" class="rest"></td>
+                    <td colspan="2" class="an"><input type="button" value="=" onclick="solve()" class="answe"></td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
